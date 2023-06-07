@@ -1,24 +1,25 @@
-let words = ['ABBEY', 'ABOUT', 'ABOVE', 'ABUSE', 'ACTOR', 'ACUTE', 'ADAPT', 'ADMIT', 'ADOBE', 'ADOPT', 'ADULT', 'AFTER', 'AGAIN', 'AGENT', 'AGING', 'AGONY', 'AGREE', 'AHEAD', 'AISLE', 'ALARM', 'ALBUM', 'ALERT', 'ALIEN', 'ALIGN', 'ALIKE', 'ALIVE', 'ALLEY', 'ALLOW', 'ALLOY', 'ALONE', 'ALONG', 'ALOUD', 'ALPHA', 'ALTAR', 'ALTER', 'AMBER', 'AMEND', 'AMINO', 'AMONG', 'AMPLE', 'ANGEL', 'ANGER', 'ANGLE', 'ANGRY', 'ANKLE', 'APART', 'APPLE', 'APPLY', 'ARENA', 'ARGUE', 'ARISE', 'ARMOR', 'AROSE', 'ARRAY', 'ARROW', 'ASIDE', 'ASSAY', 'ASSET', 'ATLAS', 'AUDIO', 'AUDIT', 'AVOID', 'AWAIT', 'AWAKE', 'AWARD', 'AWARE', 'AWFUL', 'BACON', 'BADGE', 'BADLY', 'BAKED', 'BAKER', 'BARON', 'BASES', 'BASIC', 'BASIL', 'BASIN', 'BASIS', 'BATCH', 'BEACH', 'BEARD', 'BEAST', 'BEGAN', 'BEGIN', 'BEGUN', 'BEING', 'BELLY', 'BELOW', 'BENCH', 'BERRY', 'BILLY', 'BIRTH', 'BLACK', 'BLADE', 'BLAME', 'BLANK', 'BLAST', 'BLAZE', 'BLEAK', 'BLEND', 'BLIND', 'BLOCK', 'BLOOD', 'BLOOM', 'BLOWN', 'BLUES', 'BLUNT', 'BOARD', 'BOAST', 'BOBBY', 'BONUS', 'BOOST', 'BOOTH', 'BORNE', 'BOUND', 'BOWEL', 'BOXER', 'BRAIN', 'BRAKE', 'BRAND', 'BRASS', 'BRAVE', 'BREAD', 'BREAK', 'BREED', 'BRENT', 'BRICK', 'BRIDE', 'BRIEF', 'BRING', 'BRINK', 'BRISK', 'BROAD', 'BROKE', 'BROOK', 'BROWN', 'BRUSH', 'BUDDY', 'BUILD', 'BUILT', 'BUNCH', 'BURKE', 'BURNT', 'BURST', 'BUYER', 'CABIN', 'CABLE', 'CACHE', 'CALIF', 'CANAL', 'CANDY', 'CANON', 'CARGO', 'CAROL', 'CARRY', 'CATCH', 'CATER', 'CAUSE', 'CEASE', 'CHAIN', 'CHAIR', 'CHALK', 'CHAOS', 'CHARM', 'CHART', 'CHASE', 'CHEAP', 'CHECK', 'CHEEK', 'CHEER', 'CHESS', 'CHEST', 'CHICK', 'CHIEF', 'CHILD', 'CHILE', 'CHILL', 'CHINA', 'CHOIR', 'CHOSE', 'CHUCK', 'CISCO', 'CIVIC', 'CIVIL', 'CLAIM', 'CLASH', 'CLASS', 'CLEAN', 'CLEAR', 'CLERK', 'CLICK', 'CLIFF', 'CLIMB', 'CLOCK', 'CLOSE', 'CLOTH', 'CLOUD', 'COACH', 'COAST', 'COLON', 'COLOR', 'COMIC', 'CONDO', 'CORAL', 'CORPS', 'COSTA', 'COUCH', 'COUGH', 'COULD', 'COUNT', 'COURT', 'COVER', 'CRACK', 'CRAFT', 'CRANE', 'CRASH', 'CRAZY', 'CREAM', 'CREED', 'CREEK', 'CREST', 'CRIED', 'CRIES', 'CRIME', 'CRISP', 'CROSS', 'CROWD', 'CROWN', 'CRUDE', 'CRUEL', 'CRUSH', 'CRUST', 'CUBIC', 'CURRY', 'CURVE', 'CYCLE', 'DADDY', 'DAILY', 'DAIRY', 'DAISY', 'DANCE', 'DATED', 'DEALT', 'DEATH', 'DEBIT', 'DEBUT', 'DECAY', 'DECOR', 'DELAY', 'DELTA', 'DENSE', 'DEPOT', 'DEPTH', 'DERBY', 'DETER', 'DEVIL', 'DIARY', 'DIGIT', 'DIRTY', 'DODGE', 'DOING', 'DONOR', 'DOUBT', 'DOZEN', 'DRAFT', 'DRAIN', 'DRAMA', 'DRANK', 'DRAWN', 'DREAM', 'DRESS', 'DRIED', 'DRIFT', 'DRILL', 'DRINK', 'DRIVE', 'DROVE', 'DRUNK', 'DUSTY', 'DYING', 'EAGER', 'EAGLE', 'EARLY', 'EARTH', 'EATEN', 'EIGHT', 'ELBOW', 'ELDER', 'ELECT', 'ELITE', 'EMPTY', 'ENEMY', 'ENJOY', 'ENTER', 'ENTRY', 'EQUAL', 'ERROR', 'ESSAY', 'ETHIC', 'EVENT', 'EVERY', 'EXACT', 'EXCEL', 'EXERT', 'EXILE', 'EXIST', 'EXTRA', 'FAINT', 'FAIRY', 'FAITH', 'FALSE', 'FAMED', 'FANCY', 'FATAL', 'FATTY', 'FAULT', 'FAVOR', 'FEAST', 'FENCE', 'FERRY', 'FETCH', 'FEVER', 'FIBER', 'FIBRE', 'FIELD', 'FIERY', 'FIFTH', 'FIFTY', 'FIGHT', 'FINAL', 'FIRST', 'FITCH', 'FIXED', 'FLAME', 'FLASH', 'FLEET', 'FLESH', 'FLIES', 'FLINT', 'FLOAT', 'FLOCK', 'FLOOD', 'FLOOR', 'FLORA', 'FLOUR', 'FLOWN', 'FLUID', 'FLUNG', 'FLUSH', 'FOCAL', 'FOCUS', 'FORCE', 'FORGE', 'FORTH', 'FORTY', 'FORUM', 'FOUND', 'FRAME', 'FRANK', 'FRAUD', 'FRESH', 'FRIED', 'FRONT', 'FROST', 'FRUIT', 'FULLY', 'FUNNY', 'GAMMA', 'GAUGE', 'GENRE', 'GHOST', 'GIANT', 'GIVEN', 'GLASS', 'GLOBE', 'GLORY', 'GLOVE', 'GOING', 'GRACE', 'GRADE', 'GRAIN', 'GRAMS', 'GRAND', 'GRANT', 'GRAPH', 'GRASP', 'GRASS', 'GRAVE', 'GREAT', 'GREED', 'GREEN', 'GREET', 'GRIEF', 'GRILL', 'GROSS', 'GROUP', 'GROVE', 'GROWN', 'GUARD', 'GUESS', 'GUEST', 'GUIDE', 'GUILD', 'GUILT', 'HABIT', 'HANDY', 'HAPPY', 'HARDY', 'HARRY', 'HARSH', 'HATCH', 'HAVEN', 'HEART', 'HEATH', 'HEAVY', 'HEDGE', 'HEFTY', 'HELLO', 'HENCE', 'HENRY', 'HOBBY', 'HOLLY', 'HOMER', 'HONEY', 'HONOR', 'HORSE', 'HOTEL', 'HOUSE', 'HUMAN', 'HURRY', 'IDEAL', 'IMAGE', 'IMPLY', 'INCUR', 'INDEX', 'INNER', 'INPUT', 'INTEL', 'INTER', 'IRONY', 'ISSUE', 'IVORY', 'JAPAN', 'JENNY', 'JEWEL', 'JIMMY', 'JOINT', 'JONES', 'JUDGE', 'JUICE', 'KNIFE', 'KNOCK', 'KNOWN', 'LABEL', 'LABOR', 'LADEN', 'LANCE', 'LARGE', 'LASER', 'LATER', 'LAUGH', 'LAYER', 'LEARN', 'LEASE', 'LEAST', 'LEAVE', 'LEGAL', 'LEMON', 'LEVEL', 'LEVER', 'LEWIS', 'LIGHT', 'LIMIT', 'LINEN', 'LINKS', 'LIVER', 'LIVES', 'LOBBY', 'LOCAL', 'LODGE', 'LOGIC', 'LOOSE', 'LOTUS', 'LOVER', 'LOWER', 'LOYAL', 'LUCKY', 'LUNCH', 'LYING', 'LYNCH', 'MAGIC', 'MAJOR', 'MAKER', 'MANOR', 'MAPLE', 'MARCH', 'MARIA', 'MARRY', 'MARSH', 'MASON']
+// const words = require('words.json')
+let words = ['able', 'about', 'account', 'acid', 'across', 'act', 'addition', 'adjustment', 'advertisement', 'after', 'again', 'against', 'agreement', 'air', 'all', 'almost', 'among', 'amount', 'amusement', 'and', 'angle', 'angry', 'animal', 'answer', 'ant', 'any', 'apparatus', 'apple', 'approval', 'arch', 'argument', 'arm', 'army', 'art', 'as', 'at', 'attack', 'attempt', 'attention', 'attraction', 'authority', 'automatic', 'awake', 'baby', 'back', 'bad', 'bag', 'balance', 'ball', 'band', 'base', 'basin', 'basket', 'bath', 'be', 'beautiful', 'because', 'bed', 'bee', 'before', 'behaviour', 'belief', 'bell', 'bent', 'berry', 'between', 'bird', 'birth', 'bit', 'bite', 'bitter', 'black', 'blade', 'blood', 'blow', 'blue', 'board', 'boat', 'body', 'boiling', 'bone', 'book', 'boot', 'bottle', 'box', 'boy', 'brain', 'brake', 'branch', 'brass', 'bread', 'breath', 'brick', 'bridge', 'bright', 'broken', 'brother', 'brown', 'brush', 'bucket', 'building', 'bulb', 'burn', 'burst', 'business', 'but', 'butter', 'button', 'by', 'cake', 'camera', 'canvas', 'card', 'care', 'carriage', 'cart', 'cat', 'cause', 'certain', 'chain', 'chalk', 'chance', 'change', 'cheap', 'cheese', 'chemical', 'chest', 'chief', 'chin', 'church', 'circle', 'clean', 'clear', 'clock', 'cloth', 'cloud', 'coal', 'coat', 'cold', 'collar', 'colour', 'comb', 'come', 'comfort', 'committee', 'common', 'company', 'comparison', 'competition', 'complete', 'complex', 'condition', 'connection', 'conscious', 'control', 'cook', 'copper', 'copy', 'cord', 'cork', 'cotton', 'cough', 'country', 'cover', 'cow', 'crack', 'credit', 'crime', 'cruel', 'crush', 'cry', 'cup', 'cup', 'current', 'curtain', 'curve', 'cushion', 'damage', 'danger', 'dark', 'daughter', 'day', 'dead', 'dear', 'death', 'debt', 'decision', 'deep', 'degree', 'delicate', 'dependent', 'design', 'desire', 'destruction', 'detail', 'development', 'different', 'digestion', 'direction', 'dirty', 'discovery', 'discussion', 'disease', 'disgust', 'distance', 'distribution', 'division', 'do', 'dog', 'door', 'doubt', 'down', 'drain', 'drawer', 'dress', 'drink', 'driving', 'drop', 'dry', 'dust', 'ear', 'early', 'earth', 'east', 'edge', 'education', 'effect', 'egg', 'elastic', 'electric', 'end', 'engine', 'enough', 'equal', 'error', 'even', 'event', 'ever', 'every', 'example', 'exchange', 'existence', 'expansion', 'experience', 'expert', 'eye', 'face', 'fact', 'fall', 'false', 'family', 'far', 'farm', 'fat', 'father', 'fear', 'feather', 'feeble', 'feeling', 'female', 'fertile', 'fiction', 'field', 'fight', 'finger', 'fire', 'first', 'fish', 'fixed', 'flag', 'flame', 'flat', 'flight', 'floor', 'flower', 'fly', 'fold', 'food', 'foolish', 'foot', 'for', 'force', 'fork', 'form', 'forward', 'fowl', 'frame', 'free', 'frequent', 'friend', 'from', 'front', 'fruit', 'full', 'future', 'garden', 'general', 'get', 'girl', 'give', 'glass', 'glove', 'go', 'goat', 'gold', 'good', 'government', 'grain', 'grass', 'great', 'green', 'grey', 'grip', 'group', 'growth', 'guide', 'gun', 'hair', 'hammer', 'hand', 'hanging', 'happy', 'harbour', 'hard', 'harmony', 'hat', 'hate', 'have', 'he', 'head', 'healthy', 'hear', 'hearing', 'heart', 'heat', 'help', 'high', 'history', 'hole', 'hollow', 'hook', 'hope', 'horn', 'horse', 'hospital', 'hour', 'house', 'how', 'humour', 'I', 'ice', 'idea', 'if', 'ill', 'important', 'impulse', 'in', 'increase', 'industry', 'ink', 'insect', 'instrument', 'insurance', 'interest', 'invention', 'iron', 'island', 'jelly', 'jewel', 'join', 'journey', 'judge', 'jump', 'keep', 'kettle', 'key', 'kick', 'kind', 'kiss', 'knee', 'knife', 'knot', 'knowledge', 'land', 'language', 'last', 'late', 'laugh', 'law', 'lead', 'leaf', 'learning', 'leather', 'left', 'leg', 'let', 'letter', 'level', 'library', 'lift', 'light', 'like', 'limit', 'line', 'linen', 'lip', 'liquid', 'list', 'little', 'living', 'lock', 'long', 'look', 'loose', 'loss', 'loud', 'love', 'low', 'machine', 'make', 'male', 'man', 'manager', 'map', 'mark', 'market', 'married', 'mass', 'match', 'material', 'may', 'meal', 'measure', 'meat', 'medical', 'meeting', 'memory', 'metal', 'middle', 'military', 'milk', 'mind', 'mine', 'minute', 'mist', 'mixed', 'money', 'monkey', 'month', 'moon', 'morning', 'mother', 'motion', 'mountain', 'mouth', 'move', 'much', 'muscle', 'music', 'nail', 'name', 'narrow', 'nation', 'natural', 'near', 'necessary', 'neck', 'need', 'needle', 'nerve', 'net', 'new', 'news', 'night', 'no', 'noise', 'normal', 'north', 'nose', 'not', 'note', 'now', 'number', 'nut', 'observation', 'of', 'off', 'offer', 'office', 'oil', 'old', 'on', 'only', 'open', 'operation', 'opinion', 'opposite', 'or', 'orange', 'order', 'organization', 'ornament', 'other', 'out', 'oven', 'over', 'owner', 'page', 'pain', 'paint', 'paper', 'parallel', 'parcel', 'part', 'past', 'paste', 'payment', 'peace', 'pen', 'pencil', 'person', 'physical', 'picture', 'pig', 'pin', 'pipe', 'place', 'plane', 'plant', 'plate', 'play', 'please', 'pleasure', 'plough', 'pocket', 'point', 'poison', 'polish', 'political', 'poor', 'porter', 'position', 'possible', 'pot', 'potato', 'powder', 'power', 'present', 'price', 'print', 'prison', 'private', 'probable', 'process', 'produce', 'profit', 'property', 'prose', 'protest', 'public', 'pull', 'pump', 'punishment', 'purpose', 'push', 'put', 'quality', 'question', 'quick', 'quiet', 'quite', 'rail', 'rain', 'range', 'rat', 'rate', 'ray', 'reaction', 'reading', 'ready', 'reason', 'receipt', 'record', 'red', 'regret', 'regular', 'relation', 'religion', 'representative', 'request', 'respect', 'responsible', 'rest', 'reward', 'rhythm', 'rice', 'right', 'ring', 'river', 'road', 'rod', 'roll', 'roof', 'room', 'root', 'rough', 'round', 'rub', 'rule', 'run', 'sad', 'safe', 'sail', 'salt', 'same', 'sand', 'say', 'scale', 'school', 'science', 'scissors', 'screw', 'sea', 'seat', 'second', 'secret', 'secretary', 'see', 'seed', 'seem', 'selection', 'self', 'send', 'sense', 'separate', 'serious', 'servant', 'sex', 'shade', 'shake', 'shame', 'sharp', 'sheep', 'shelf', 'ship', 'shirt', 'shock', 'shoe', 'short', 'shut', 'side', 'sign', 'silk', 'silver', 'simple', 'sister', 'size', 'skin', 'skirt', 'sky', 'sleep', 'slip', 'slope', 'slow', 'small', 'smash', 'smell', 'smile', 'smoke', 'smooth', 'snake', 'sneeze', 'snow', 'so', 'soap', 'society', 'sock', 'soft', 'solid', 'some', 'son', 'song', 'sort', 'sound', 'soup', 'south', 'space', 'spade', 'special', 'sponge', 'spoon', 'spring', 'square', 'stage', 'stamp', 'star', 'start', 'statement', 'station', 'steam', 'steel', 'stem', 'step', 'stick', 'sticky', 'stiff', 'still', 'stitch', 'stocking', 'stomach', 'stone', 'stop', 'store', 'story', 'straight', 'strange', 'street', 'stretch', 'strong', 'structure', 'substance', 'such', 'sudden', 'sugar', 'suggestion', 'summer', 'sun', 'support', 'surprise', 'sweet', 'swim', 'system', 'table', 'tail', 'take', 'talk', 'tall', 'taste', 'tax', 'teaching', 'tendency', 'test', 'than', 'that', 'the', 'then', 'theory', 'there', 'thick', 'thin', 'thing', 'this', 'thought', 'thread', 'throat', 'through', 'through', 'thumb', 'thunder', 'ticket', 'tight', 'till', 'time', 'tin', 'tired', 'to', 'toe', 'together', 'tomorrow', 'tongue', 'tooth', 'top', 'touch', 'town', 'trade', 'train', 'transport', 'tray', 'tree', 'trick', 'trouble', 'trousers', 'true', 'turn', 'twist', 'umbrella', 'under', 'unit', 'up', 'use', 'value', 'verse', 'very', 'vessel', 'view', 'violent', 'voice', 'waiting', 'walk', 'wall', 'war', 'warm', 'wash', 'waste', 'watch', 'water', 'wave', 'wax', 'way', 'weather', 'week', 'weight', 'well', 'west', 'wet', 'wheel', 'when', 'where', 'while', 'whip', 'whistle', 'white', 'who', 'why', 'wide', 'will', 'wind', 'window', 'wine', 'wing', 'winter', 'wire', 'wise', 'with', 'woman', 'wood', 'wool', 'word', 'work', 'worm', 'wound', 'writing', 'wrong', 'year', 'yellow', 'yes', 'yesterday', 'you', 'young', 'Bernhard', 'Breytenbach', 'Android']
+let letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+let lettersGuessed = []
 let buttons = document.getElementsByClassName('keys')
-let letterKeys = document.getElementsByClassName('letters')
-let wordsGuessed = []
-let word = words[Math.floor(Math.random() * words.length)]
+let word = words[Math.floor(Math.random() * words.length)].toUpperCase()
+let wordToGuess = document.getElementById('word')
 
-console.log(word)
+sessionStorage.setItem('stage', 0)
+let stage = sessionStorage.getItem('stage') ? sessionStorage.getItem('stage') : 0
 
-function toUnused(element) {
-    element.style.border = '2px solid #d3d6da'
-    element.style.backgroundColor = '#ffffff'
-    element.style.color = '#000000'
-    return
-}
+console.log(word, stage)
 
-function toInput(element) {
-    element.style.border = '2px solid #878a8c'
-    element.style.backgroundColor = '#ffffff'
-    element.style.color = '#000000'
-    return
-}
+// revealAllStages(stage)
+
+word.split('').forEach((char) => {
+    let element = document.createElement('div')
+
+    wordToGuess.appendChild(element)
+    element.innerText = '_'
+    element.classList.add('character')
+})
 
 function toNotInWord(element) {
     let button = document.getElementById(element.innerText)
@@ -33,20 +34,7 @@ function toNotInWord(element) {
     return
 }
 
-function toIncorrectOrder(element) {
-    let button = document.getElementById(element.innerText)
-    if (['#d3d6da', '787c7e'].includes(button.style.backgroundColor) || button.style.backgroundColor === '') {
-        button.style.backgroundColor = '#c9b458'
-        button.style.color = '#ffffff'
-    }
-
-    element.style.border = '2px solid #c9b458'
-    element.style.backgroundColor = '#c9b458'
-    element.style.color = '#ffffff'
-    return
-}
-
-function toCorrectOrder(element) {
+function toInWord(element) {
     let button = document.getElementById(element.innerText)
     if (['#d3d6da', '787c7e', 'c9b458'].includes(button.style.backgroundColor) || button.style.backgroundColor === '') {
         button.style.backgroundColor = '#6aaa64'
@@ -59,15 +47,6 @@ function toCorrectOrder(element) {
     return
 }
 
-function componentToHex(colour) {
-    let hex = parseInt(colour).toString(16);
-    return hex.length == 1 ? '0' + hex : hex;
-}
-
-function rgbToHex(colours) {
-    return `#${componentToHex(colours[0])}${componentToHex(colours[1])}${componentToHex(colours[2])}`;
-}
-
 function hideElement(element) {
     element.hidden = true
     return
@@ -78,22 +57,22 @@ function showElement(element) {
     return
 }
 
-function errorMessage(message) {
-    let element = document.getElementById('prompt')
-    showElement(element)
-
-    document.body.innerHTML = document.body.innerHTML.replace('$promptMessage', message)
-
-    setTimeout(() => hideElement(document.getElementById('prompt')), 3000)
+function nextStage(stage) {
+    let stages = document.getElementsByClassName(`stage`)
+    
+    stages[stage].hidden = false
+    stage = parseInt(stage) + 1
+    sessionStorage.setItem('stage', stage)
+    return
 }
 
-function gameEndedMessage(message, word, wordsGuessed) {
+function gameEndedMessage(message, word, lettersGuessed) {
     let element = document.getElementById('popup-container')
 
     showElement(element)
     document.body.innerHTML = document.body.innerHTML.replace('$outcome', message)
     document.body.innerHTML = document.body.innerHTML.replace('$word', word.toLowerCase())
-    document.body.innerHTML = document.body.innerHTML.replace('$tries', (wordsGuessed.length + 1))
+    document.body.innerHTML = document.body.innerHTML.replace('$tries', (lettersGuessed.length + 1))
 
     document.getElementById('close').addEventListener('click', () => hideElement(document.getElementById('popup-container')))
     document.getElementById('continue').addEventListener('click', () => location.reload())
@@ -109,71 +88,11 @@ Object.values(buttons).forEach((element) => {
 
         if (document.getElementById('popup-container').hidden === false) return;
 
-        let id = element.id
-
-        if (id == 'ENTER') {
-            for (let x = 0; x < 6; x++) {
-                if (!wordsGuessed[x]) {
-                    let userGuess;
-                    for (let y = 1; y < 6; y++) {
-                        if (document.getElementsByClassName(`letter${y}`)[x].innerText === '') {
-                            errorMessage('Please enter a word!')
-                            return
-                        }
-                        if (!userGuess) {
-                            userGuess = document.getElementsByClassName(`letter${y}`)[x].innerText
-                        } else {
-                            userGuess += document.getElementsByClassName(`letter${y}`)[x].innerText
-                        }
-                    }
-                    if (!words.includes(userGuess)) {
-                        errorMessage('Please enter a valid word!')
-                        return
-                    }
-                    for (let y = 1; y < 6; y++) {
-                        if (document.getElementsByClassName(`letter${y}`)[x].innerText === word[y - 1]) {
-                            toCorrectOrder(document.getElementsByClassName(`letter${y}`)[x])
-                            if (userGuess === word) {
-                                gameEndedMessage('You have won!', word, wordsGuessed)
-                            }
-                        } else if (word.includes(document.getElementsByClassName(`letter${y}`)[x].innerText)) {
-                            toIncorrectOrder(document.getElementsByClassName(`letter${y}`)[x])
-                        } else {
-                            toNotInWord(document.getElementsByClassName(`letter${y}`)[x])
-                        }
-                    }
-                    wordsGuessed.push(userGuess)
-                    break
-                }
-                if (wordsGuessed[6]) {
-                    gameEndedMessage('You have lost!', word, wordsGuessed)
-                }
-            }
-        } else if (id == 'BACKSPACE') {
-            for (let x = (document.getElementsByClassName('boxes').length - 1); x >= 0; x--) {
-                let element = document.getElementsByClassName('boxes')[x]
-                if (element.innerText !== '' && rgbToHex(element.style.backgroundColor.slice(4, -1).split(', ')) === '#ffffff') {
-                    element.innerText = ''
-                    toUnused(element)
-                    break
-                }
-                // else {
-                //     errorMessage('There is nothing to remove!')
-                // }
-            }
+        let keyPressed = element.id
+        if (word.includes(keyPressed)) {
+            toInWord(document.getElementById(keyPressed))
         } else {
-            for (let x = 0; x < 6; x++) {
-                if (!wordsGuessed[x]) {
-                    for (let y = 1; y < 6; y++) {
-                        if (document.getElementsByClassName(`letter${y}`)[x].innerText === '') {
-                            document.getElementsByClassName(`letter${y}`)[x].innerText = id
-                            toInput(document.getElementsByClassName(`letter${y}`)[x])
-                            break
-                        }
-                    }
-                    break
-                }
-            }
+            toNotInWord(document.getElementById(keyPressed))
         }
     })
 })
@@ -183,71 +102,20 @@ window.addEventListener('keydown', function (event) {
         return
     }
     event.preventDefault()
+    let keyPressed = event.key.toUpperCase()
 
     if (document.getElementById('popup-container').hidden === false) return;
 
-    if (event.key.toUpperCase() == 'ENTER') {
-        for (let x = 0; x < 6; x++) {
-            if (!wordsGuessed[x]) {
-                let userGuess;
-                for (let y = 1; y < 6; y++) {
-                    if (document.getElementsByClassName(`letter${y}`)[x].innerText === '') {
-                        errorMessage('Please enter a word!')
-                        return
-                    }
-                    if (!userGuess) {
-                        userGuess = document.getElementsByClassName(`letter${y}`)[x].innerText
-                    } else {
-                        userGuess += document.getElementsByClassName(`letter${y}`)[x].innerText
-                    }
-                }
-                if (!words.includes(userGuess)) {
-                    errorMessage('Please enter a valid word!')
-                    return
-                }
-                for (let y = 1; y < 6; y++) {
-                    if (document.getElementsByClassName(`letter${y}`)[x].innerText === word[y - 1]) {
-                        toCorrectOrder(document.getElementsByClassName(`letter${y}`)[x])
-                        if (userGuess === word) {
-                            gameEndedMessage('You have won!', word, wordsGuessed)
-                        }
-                    } else if (word.includes(document.getElementsByClassName(`letter${y}`)[x].innerText)) {
-                        toIncorrectOrder(document.getElementsByClassName(`letter${y}`)[x])
-                    } else {
-                        toNotInWord(document.getElementsByClassName(`letter${y}`)[x])
-                    }
-                }
-                wordsGuessed.push(userGuess)
-                break
+    if (letters.includes(keyPressed)) {
+        if (word.includes(keyPressed)) {
+            toInWord(document.getElementById(keyPressed))
+        } else {
+            toNotInWord(document.getElementById(keyPressed))
+            if (stage === 10) {
+                gameEndedMessage('You win!')
+                return
             }
-            if (wordsGuessed.length >= 5) {
-                gameEndedMessage('You have lost!', word, wordsGuessed)
-            }
-        }
-    } else if (event.key.toUpperCase() == 'BACKSPACE') {
-        for (let x = (document.getElementsByClassName('boxes').length - 1); x >= 0; x--) {
-            let element = document.getElementsByClassName('boxes')[x]
-            if (element.innerText !== '' && rgbToHex(element.style.backgroundColor.slice(4, -1).split(', ')) === '#ffffff') {
-                element.innerText = ''
-                toUnused(element)
-                break
-            }
-            // else {
-            //     errorMessage('There is nothing to remove!')
-            // }
-        }
-    } else if (['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'].includes(event.key.toUpperCase())) {
-        for (let x = 0; x < 6; x++) {
-            if (!wordsGuessed[x]) {
-                for (let y = 1; y < 6; y++) {
-                    if (document.getElementsByClassName(`letter${y}`)[x].innerText === '') {
-                        document.getElementsByClassName(`letter${y}`)[x].innerText = event.key.toUpperCase()
-                        toInput(document.getElementsByClassName(`letter${y}`)[x])
-                        break
-                    }
-                }
-                break
-            }
+            nextStage(stage)
         }
     } else {
         return

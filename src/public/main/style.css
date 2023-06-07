@@ -336,3 +336,34 @@ button {
     border: solid 1px #000000;
     margin-left: 37.5%;
 }
+
+.word {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.missing_word {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.word_label { 
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.characters {
+    display: flex;
+    gap: 10px;
+}
+
+.word_label {
+    display: flex;
+    justify-content: center;
+}

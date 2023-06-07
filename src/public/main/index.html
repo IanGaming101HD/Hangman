@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>Wordle</title>
+    <title>Hangman</title>
     <link rel='stylesheet' href='./public/main/style.css'>
 </head>
 
@@ -11,16 +11,18 @@
     <div class='container centre'>
         <h1 class='header'>Hangman</h1>
         <div class='game-container centre'>
-            <div id='stage-1' class='stage stage-1'></div>
-            <div id='stage-2' class='stage stage-2'></div>
-            <div id='stage-3' class='stage stage-3'></div>
-            <div id='stage-4' class='stage stage-4'></div>
-            <div id='stage-5' class='stage stage-5'></div>
-            <div id='stage-6' class='stage stage-6'></div>
-            <div id='stage-7' class='stage stage-7'></div>
-            <div id='stage-8' class='stage stage-8'></div>
-            <div id='stage-9' class='stage stage-9'></div>
-            <div id='stage-10' class='stage stage-10'></div>
+            <h2 class='word_label'>Word:<div id='word' class='word characters'></div>
+            </h2>
+            <div id='stage-1' class='stage stage-1' hidden></div>
+            <div id='stage-2' class='stage stage-2' hidden></div>
+            <div id='stage-3' class='stage stage-3' hidden></div>
+            <div id='stage-4' class='stage stage-4' hidden></div>
+            <div id='stage-5' class='stage stage-5' hidden></div>
+            <div id='stage-6' class='stage stage-6' hidden></div>
+            <div id='stage-7' class='stage stage-7' hidden></div>
+            <div id='stage-8' class='stage stage-8' hidden></div>
+            <div id='stage-9' class='stage stage-9' hidden></div>
+            <div id='stage-10' class='stage stage-10' hidden></div>
             <!-- <div id='stage-11' class='stage stage-11 cross cross-1'>
                 <div class='stage cross-1-1'></div>
                 <div class='stage cross-1-2'></div>
