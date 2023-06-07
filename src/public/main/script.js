@@ -11,8 +11,6 @@ let stage = sessionStorage.getItem('stage') ? sessionStorage.getItem('stage') : 
 
 console.log(word, stage)
 
-// revealAllStages(stage)
-
 word.split('').forEach((char) => {
     let element = document.createElement('div')
 
@@ -109,10 +107,13 @@ window.addEventListener('keydown', function (event) {
     if (letters.includes(keyPressed)) {
         if (word.includes(keyPressed)) {
             toInWord(document.getElementById(keyPressed))
+            if (!Array.from(document.getElementsByClassName('character')).find((element) => element.innerText === '_')) {
+                gameEndedMessage('You win!', word, lettersGuessed.length)
+            }
         } else {
             toNotInWord(document.getElementById(keyPressed))
             if (stage === 10) {
-                gameEndedMessage('You win!')
+                gameEndedMessage('You lose!', word, lettersGuessed.length)
                 return
             }
             nextStage(stage)
