@@ -11,7 +11,7 @@ let stage = sessionStorage.getItem('stage') ? sessionStorage.getItem('stage') : 
 
 console.log(word, stage)
 
-revealAllStages()
+// revealAllStages()
 
 word.split('').forEach((char) => {
     let element = document.createElement('div')
@@ -57,11 +57,22 @@ function showElement(element) {
     return
 }
 
-function nextStage(stage) {
+function nextStage(stage, word, lettersGuessed) {
     let stages = document.getElementsByClassName(`stage`)
-    console.log(`${stage} -> ${parseInt(stage) + 1}`)
+
+    if (stage >= 10) {
+        stages[stage].hidden = false
+        stage = parseInt(stage) + 1
+        sessionStorage.setItem('stage', stage)
+    }
 
     stages[stage].hidden = false
+
+    if (stage >= 13) {
+        gameEndedMessage('You lost!', word, lettersGuessed)
+        return
+    }
+
     stage = parseInt(stage) + 1
     sessionStorage.setItem('stage', stage)
     return
@@ -80,7 +91,7 @@ function gameEndedMessage(message, word, lettersGuessed) {
     showElement(element)
     document.body.innerHTML = document.body.innerHTML.replace('$outcome', message)
     document.body.innerHTML = document.body.innerHTML.replace('$word', word.toLowerCase())
-    document.body.innerHTML = document.body.innerHTML.replace('$tries', (lettersGuessed.length + 1))
+    document.body.innerHTML = document.body.innerHTML.replace('$lettersGuessed', lettersGuessed)
 
     document.getElementById('close').addEventListener('click', () => hideElement(document.getElementById('popup-container')))
     document.getElementById('continue').addEventListener('click', () => location.reload())
@@ -97,18 +108,21 @@ Object.values(buttons).forEach((element) => {
         if (document.getElementById('popup-container').hidden === false) return;
 
         let keyPressed = element.id
+        lettersGuessed.push(keyPressed)
+        
         if (word.includes(keyPressed)) {
             toInWord(document.getElementById(keyPressed))
+            Array.from(document.getElementsByClassName('character')).forEach((value, index) => {
+                if (keyPressed === word[index]) {
+                    value.innerText = keyPressed
+                }
+            })
             if (!Array.from(document.getElementsByClassName('character')).find((element) => element.innerText === '_')) {
                 gameEndedMessage('You win!', word, lettersGuessed.length)
             }
         } else {
             toNotInWord(document.getElementById(keyPressed))
-            // if (sessionStorage.getItem('stage') ? sessionStorage.getItem('stage') : 0 === 10) {
-            //     gameEndedMessage('You lose!', word, lettersGuessed.length)
-            //     return
-            // }
-            nextStage(sessionStorage.getItem('stage') ? sessionStorage.getItem('stage') : 0)
+            nextStage(sessionStorage.getItem('stage') ? sessionStorage.getItem('stage') : 0, word, lettersGuessed.length)
         }
     })
 })
@@ -123,18 +137,20 @@ window.addEventListener('keydown', function (event) {
     if (document.getElementById('popup-container').hidden === false) return;
 
     if (letters.includes(keyPressed)) {
+        lettersGuessed.push(keyPressed)
         if (word.includes(keyPressed)) {
             toInWord(document.getElementById(keyPressed))
+            Array.from(document.getElementsByClassName('character')).forEach((value, index) => {
+                if (keyPressed === word[index]) {
+                    value.innerText = keyPressed
+                }
+            })
             if (!Array.from(document.getElementsByClassName('character')).find((element) => element.innerText === '_')) {
                 gameEndedMessage('You win!', word, lettersGuessed.length)
             }
         } else {
             toNotInWord(document.getElementById(keyPressed))
-            if (sessionStorage.getItem('stage') ? sessionStorage.getItem('stage') : 0 === 10) {
-                gameEndedMessage('You lose!', word, lettersGuessed.length)
-                return
-            }
-            nextStage(sessionStorage.getItem('stage') ? sessionStorage.getItem('stage') : 0)
+            nextStage(sessionStorage.getItem('stage') ? sessionStorage.getItem('stage') : 0, word, lettersGuessed.length)
         }
     }
 })

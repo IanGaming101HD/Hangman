@@ -17,6 +17,10 @@ button {
     text-align: center;
 }
 
+.centre {
+    text-align: center;
+}
+
 .boxes {
     font-family: sans-serif;
     font-weight: bold;
@@ -28,42 +32,6 @@ button {
     background-color: #ffffff;
     border: 2px solid #d3d6da;
     margin: 2px;
-}
-
-.row1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.row2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.row3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.row4 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.row5 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.row6 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .keyboard-container {
@@ -126,7 +94,6 @@ button {
     align-items: center;
     justify-content: center;
     height: 50px;
-    /* border: 2px solid #000000; */
 }
 
 .popup-title {
@@ -135,7 +102,6 @@ button {
 }
 
 .close {
-    /* margin-right: -50px; */
     color: #000000;
     padding: 5px;
     font-size: 20px;
@@ -255,7 +221,7 @@ button {
 .cross-1-1 {
     position: relative;
     background-color: #000000;
-    top: -360px;
+    top: -357.5px;
     left: 46%;
     height: 2.5%;
     width: 0.5%;
@@ -265,7 +231,7 @@ button {
 .cross-1-2 {
     position: relative;
     background-color: #000000;
-    top: -377.5px;
+    top: -370px;
     left: 46%;
     height: 2.5%;
     width: 0.5%;
@@ -275,7 +241,7 @@ button {
 .cross-2-1 {
     position: relative;
     background-color: #000000;
-    top: -395px;
+    top: -382.5px;
     left: 49.5%;
     height: 2.5%;
     width: 0.5%;
@@ -285,7 +251,7 @@ button {
 .cross-2-2 {
     position: relative;
     background-color: #000000;
-    top: -412.5px;
+    top: -395px;
     left: 49.5%;
     height: 2.5%;
     width: 0.5%;
@@ -321,6 +287,7 @@ button {
 }
 
 .characters {
+    margin-top: 0%;
     display: flex;
     gap: 10px;
 }
