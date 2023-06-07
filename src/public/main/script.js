@@ -11,6 +11,8 @@ let stage = sessionStorage.getItem('stage') ? sessionStorage.getItem('stage') : 
 
 console.log(word, stage)
 
+revealAllStages()
+
 word.split('').forEach((char) => {
     let element = document.createElement('div')
 
@@ -57,10 +59,18 @@ function showElement(element) {
 
 function nextStage(stage) {
     let stages = document.getElementsByClassName(`stage`)
-    
+    console.log(`${stage} -> ${parseInt(stage) + 1}`)
+
     stages[stage].hidden = false
     stage = parseInt(stage) + 1
     sessionStorage.setItem('stage', stage)
+    return
+}
+
+function revealAllStages() {
+    let stages = document.getElementsByClassName(`stage`)
+    
+    Array.from(stages).forEach((x) => x.hidden = false)
     return
 }
 
@@ -89,8 +99,16 @@ Object.values(buttons).forEach((element) => {
         let keyPressed = element.id
         if (word.includes(keyPressed)) {
             toInWord(document.getElementById(keyPressed))
+            if (!Array.from(document.getElementsByClassName('character')).find((element) => element.innerText === '_')) {
+                gameEndedMessage('You win!', word, lettersGuessed.length)
+            }
         } else {
             toNotInWord(document.getElementById(keyPressed))
+            // if (sessionStorage.getItem('stage') ? sessionStorage.getItem('stage') : 0 === 10) {
+            //     gameEndedMessage('You lose!', word, lettersGuessed.length)
+            //     return
+            // }
+            nextStage(sessionStorage.getItem('stage') ? sessionStorage.getItem('stage') : 0)
         }
     })
 })
@@ -112,13 +130,11 @@ window.addEventListener('keydown', function (event) {
             }
         } else {
             toNotInWord(document.getElementById(keyPressed))
-            if (stage === 10) {
+            if (sessionStorage.getItem('stage') ? sessionStorage.getItem('stage') : 0 === 10) {
                 gameEndedMessage('You lose!', word, lettersGuessed.length)
                 return
             }
-            nextStage(stage)
+            nextStage(sessionStorage.getItem('stage') ? sessionStorage.getItem('stage') : 0)
         }
-    } else {
-        return
     }
 })

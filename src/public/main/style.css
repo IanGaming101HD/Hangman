@@ -253,80 +253,42 @@ button {
 }
 
 .cross-1-1 {
+    position: relative;
     background-color: #000000;
-    /* padding: 1%; */
-    top: -74.5%;
+    top: -360px;
     left: 46%;
-    width: 0.5%;
     height: 2.5%;
+    width: 0.5%;
     rotate: 45deg;
 }
 
 .cross-1-2 {
+    position: relative;
     background-color: #000000;
+    top: -377.5px;
     left: 46%;
-    top: -74.5%;
-    width: 0.5%;
     height: 2.5%;
+    width: 0.5%;
     rotate: -45deg;
 }
 
 .cross-2-1 {
+    position: relative;
     background-color: #000000;
+    top: -395px;
     left: 49.5%;
-    top: -77%;
-    width: 0.5%;
     height: 2.5%;
+    width: 0.5%;
     rotate: 45deg;
 }
 
 .cross-2-2 {
-    background-color: #000000;
-    left: 49.5%;
-    top: -79.5%;
-    width: 0.5%;
-    height: 2.5%;
-    rotate: -45deg;
-}
-
-.cross {
     position: relative;
-    top: -79.5%
-}
-
-.stage-11 {
     background-color: #000000;
-    top: -72%;
-    left: 46%;
-    width: 0.5%;
-    height: 2.5%;
-    rotate: 45deg;
-}
-
-.stage-12 {
-    background-color: #000000;
-    left: 46%;
-    top: -74.5%;
-    width: 0.5%;
-    height: 2.5%;
-    rotate: -45deg;
-}
-
-.stage-13 {
-    background-color: #000000;
+    top: -412.5px;
     left: 49.5%;
-    top: -77%;
-    width: 0.5%;
     height: 2.5%;
-    rotate: 45deg;
-}
-
-.stage-14 {
-    background-color: #000000;
-    left: 49.5%;
-    top: -79.5%;
     width: 0.5%;
-    height: 2.5%;
     rotate: -45deg;
 }
 
